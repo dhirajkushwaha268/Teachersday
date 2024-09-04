@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TeachersDay</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <body style="background-color:rgb(255, 4, 130);">
+    </body>
+    <div class="gif">
+    </div>
+    <div class="pop-up">
+      <div id="wrapper">
+        <div class="envelope open">
+          <div class="flap front"></div>
+          <div class="flap top"></div>
+          <div class="letter"></div>
+        </div>
+      </div>
+    </div>
+    <div class="book">
+      <div class="book-first"></div>
+    </div>
+
+    <script src="./confetti.js"></script>
+    <script>
+      const startit = () => {
+        setTimeout(function () {
+          confetti.start();
+        }, 2000);
+      };
+
+      const stopit = () => {
+        setTimeout(function () {
+          confetti.stop();
+        }, 7000);
+      };
+
+      startit();
+      stopit();
+    </script>
+    <div>
+      <marquee
+  width="device-width"
+  scrolldelay="50"
+  direction="left"
+  height="30px"
+  class="top"
+>
+  <span style="color: white; font-size: 25px">Dear Saurabh Sir..., Bass itna kehna chahunga ki aapke jaisa supportive teacher maine abhi tak kahi nhi dekha. You inspired us like a big brother, with wisdom and heart.💕✨</span>
+</marquee>
+
+<div id="secondMarqueeWrapper" style="display: none;">
+  <marquee
+    id="secondMarquee"
+    width="device-width"
+    direction="left"
+    height="30px"
+    class="bottom"
+    scrolldelay="30"
+  >
+    <span style="color: white; font-size: 25px"> Aapko bahut miss karenge ham sab.🤧</span>
+  </marquee>
+</div>
+
+<script>
+  setTimeout(function() {
+    document.getElementById('secondMarqueeWrapper').style.display = 'block';
+    // Reinitialize the marquee to ensure it scrolls
+    var marquee = document.getElementById('secondMarquee');
+    marquee.innerHTML = marquee.innerHTML; // Refreshes the marquee content to start scrolling
+  }, 20000); // 6000 milliseconds = 6 seconds
+</script>
+
+</div>
+
+<script>
+  setTimeout(function() {
+    document.getElementById('secondMarquee').style.display = 'block';
+  }, 8000); // 6000 milliseconds = 6 seconds
+</script>
+    
+    <div class="let">
+      <div class="happy">
+        <h1>
+          <span>H</span>
+          <span>A</span>
+          <span>P</span>
+          <span>P</span>
+          <span>Y</span>
+        </h1>
+      </div>
+      <div class="happy">
+        <h1 >
+          <span>T</span>
+          <span>E</span>
+          <span>A</span>
+          <span>C</span>
+          <span>H</span>
+          <span>E</span>
+          <span>R</span>
+          <span>S</span>
+        </h1>
+      </div>
+      <div class="happy">
+        <h1 >
+          <span>D</span>
+          <span>A</span>
+          <span>Y</span>
+        </h1>
+       <div class="happy">
+        <h1 >
+          <span>S</span>
+          <span>I</span>
+          <span>R</span>
+            
+          <span>J</span>
+          <span>I</span>
+          <span>I</span>
+          <span>❤</span>
+          <span>🙏</span>
+        </h1>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
